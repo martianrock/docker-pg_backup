@@ -19,5 +19,10 @@ Docker environment variables:
 Volumes:
  - /backups - backups go there
 
+Optional volumes:
+- /etc/localtime - map your host /etc/localtime there read-only to have cron operate in host's timezone
+
+You can also tmpfs /var/lib/postgresql/data, it is exported by base image but is not used in this image
+
 The backup script code is taken as-is from postgress wiki, I am not sure which license is it, I claim no rights to this code.
 Configuration script is based on config file from postgres wiki. The code that is written by me is in the public domain (CC0). 

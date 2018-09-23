@@ -13,7 +13,7 @@ BACKUP_USER=
 HOSTNAME=${POSTGRES_HOSTNAME}
  
 # Optional username to connect to database as.  Will default to "postgres" if none specified.
-USERNAME=${POSTGRES_USERNAME-postgres}
+USERNAME=${POSTGRES_USER-postgres}
  
 # This dir will be created if it doesn't exist.  This must be writable by the user the script is
 # running as.
